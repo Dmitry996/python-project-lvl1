@@ -1,0 +1,10 @@
+name: Project_1
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: linter_test
+        run: |
+          pip install poetry
+          make lint
