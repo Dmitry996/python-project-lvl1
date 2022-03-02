@@ -15,15 +15,18 @@ def main():
             if answer == "yes":
                 print("Correct!")
             else:
-                return print("'no' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again,", user_name)
+                print("'no' is wrong answer ;(. Correct answer was 'yes'.")
+                print("Let's try again,", user_name)
+                return
         else:
             if answer == "no":
                 print("Correct!")
             else:
-                return print("'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again,", user_name)
+                print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+                print("Let's try again,", user_name)
+                return
     print("Congratulations,", user_name)
 
 
 if __name__ == '__main__':
     main()
-
