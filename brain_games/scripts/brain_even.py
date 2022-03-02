@@ -7,6 +7,7 @@ def main():
     print('Welcome to the Brain Games!')
     user_name = string('May I have your name? ')
     print('Hello, ' + user_name)
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     for _ in range(3):
         number = randint(1, 100)
         print("Question:", number)
