@@ -4,9 +4,9 @@ GAMECONDITION = 'What number is missing in the progression?'
 
 
 def qwest_res():
-    st = randint(3, 10)
-    st_l = randint(1, 50)
-    numbers = [str(i) for i in range(st_l, st_l + (st * 10), st)]
+    step = randint(3, 10)
+    start = randint(1, 50)
+    numbers = [str(i) for i in range(start, start + (step * 10), step)]
     index = randint(0, 9)
     answer = numbers[index]
     numbers[index] = '..'
