@@ -10,5 +10,3 @@ def qwest_res():
     user_answer = int(input('You answer: '))
     answer = gcd(a, b)
     return user_answer, answer
-
-
