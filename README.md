@@ -10,3 +10,5 @@
 [Games-calc](https://asciinema.org/a/ZJmtUaqk2D0mFmpcr8Kc542VQ)
 
 [Games-gcd](https://asciinema.org/a/qHDFsTnUc5NEBSf8TO6iT8I28)
+
+[Games-progression](https://asciinema.org/a/3GyaapHMP3deBOl5TbKFOSDOb)
