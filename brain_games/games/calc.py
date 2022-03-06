@@ -1,23 +1,14 @@
 #!/usr/bin/env python3
 from random import randint, choice
-from brain_games.cli import greeting
+
+GAMECONDITION = 'What is the result of the expression?'
 
 
-def main():
-    user_name = greeting()
+def qwest_res():
     mat_signs = ['+', '*', '-']
-    print('What is the result of the expression?')
-    for _ in range(3):
-        a = randint(1, 20)
-        b = randint(1, 20)
-        s = f'{a} {choice(mat_signs)} {b}'
-        print("Question: " + s)
-        answer = int(input('You answer: '))
-        if answer == eval(s):
-            print('Correct!')
-        else:
-            print(f"\'{answer}\' is wrong answer ;(. "
-                  f"Correct answer was \'{eval(s)}\'.\n"
-                  f'Let\'s try again, {user_name}')
-            return
-    print(f'Congratulations, {user_name}!')
+    a, b = randint(1, 20), randint(1, 20)
+    s = f'{a} {choice(mat_signs)} {b}'
+    print("Question: " + s)
+    user_answer = int(input('You answer: '))
+    answer = eval(s)
+    return user_answer, answer
