@@ -12,3 +12,5 @@
 [Games-gcd](https://asciinema.org/a/qHDFsTnUc5NEBSf8TO6iT8I28)
 
 [Games-progression](https://asciinema.org/a/3GyaapHMP3deBOl5TbKFOSDOb)
+
+[Games-prime](https://asciinema.org/a/GfRq2OKKS5Kw9PFiNOWTF0eau)
