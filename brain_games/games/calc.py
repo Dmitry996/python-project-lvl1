@@ -18,7 +18,8 @@ def main():
         if answer == eval(s):
             print('Correct!')
         else:
-            print(f"\'{answer}\' is wrong answer ;(. Correct answer was \'{eval(s)}\'.\n"
+            print(f"\'{answer}\' is wrong answer ;(. "
+                  f"Correct answer was \'{eval(s)}\'.\n"
                   f'Let\'s try again, {user_name}')
             return
     print(f'Congratulations, {user_name}!')
