@@ -3,4 +3,5 @@
 ![example workflow](https://github.com/Dmitry996/python-project-lvl1/actions/workflows/main.yml/badge.svg)
 
 [Games-even](https://asciinema.org/a/vKyhCrEU1qgTZNg8jehgrg9RT)
+
 [Games-calc](https://asciinema.org/a/ZJmtUaqk2D0mFmpcr8Kc542VQ)
