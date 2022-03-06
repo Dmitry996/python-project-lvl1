@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 from random import randint, choice
-from prompt import string
+from brain_games.cli import greeting
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    user_name = string('May I have your name? ')
-    print('Hello, ' + user_name)
+    user_name = greeting()
     mat_signs = ['+', '*', '-']
     print('What is the result of the expression?')
     for _ in range(3):

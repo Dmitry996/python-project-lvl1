@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games import cli
+from brain_games.cli import greeting
 
 
 def main():
-    cli.greeting()
+    greeting()
 
 
 if __name__ == '__main__':
