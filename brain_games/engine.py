@@ -1,16 +1,16 @@
-from brain_games.cli import greeting
+from brain_games.welcomes_user import welcome
 
 
 def engine(game):
-    user_name = greeting()
-    print(game.GAMECONDITION)
+    user_name = welcome()
+    print(game.GAME_CONDITION)
     for _ in range(3):
-        answers = game.qwest_res()
-        if answers[0] == answers[1]:
+        user_answer, right_answer = game.qwest_result()
+        if user_answer.lower() == right_answer:
             print('Correct!')
         else:
-            print(f"'{answers[0]}' is wrong answer ;(."
-                  f"\nCorrect answer was '{answers[1]}'.)"
+            print(f"'{user_answer}' is wrong answer ;(."
+                  f"\nCorrect answer was '{right_answer}'.)"
                   f" Let's try again, {user_name}!")
             break
     else:

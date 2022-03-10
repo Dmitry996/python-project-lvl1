@@ -1,9 +1,9 @@
 from random import randint, choice
 
-GAMECONDITION = 'What is the result of the expression?'
+GAME_CONDITION = 'What is the result of the expression?'
 
 
-def qwest_res():
+def qwest_result():
     mat_signs = ['+', '*', '-']
     a, b = randint(1, 20), randint(1, 20)
     s = f'{a} {choice(mat_signs)} {b}'

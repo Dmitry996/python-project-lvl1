@@ -1,10 +1,10 @@
 from random import randint
 from math import gcd
 
-GAMECONDITION = 'Find the greatest common divisor of given numbers.'
+GAME_CONDITION = 'Find the greatest common divisor of given numbers.'
 
 
-def qwest_res():
+def qwest_result():
     a, b = randint(1, 50), randint(1, 50)
     print(f'Question: {a} {b}')
     user_answer = int(input('You answer: '))

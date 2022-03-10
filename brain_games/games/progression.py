@@ -1,9 +1,9 @@
 from random import randint
 
-GAMECONDITION = 'What number is missing in the progression?'
+GAME_CONDITION = 'What number is missing in the progression?'
 
 
-def qwest_res():
+def qwest_result():
     step = randint(3, 10)
     start = randint(1, 50)
     numbers = [str(i) for i in range(start, start + (step * 10), step)]

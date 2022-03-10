@@ -1,9 +1,9 @@
 from random import randint
 
-GAMECONDITION = 'Answer "yes" if the number is even, otherwise answer "no".'
+GAME_CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def qwest_res():
+def qwest_result():
     number = randint(1, 100)
     print("Question:", number)
     user_answer = input("Your answer: ")
