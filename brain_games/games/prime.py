@@ -3,14 +3,17 @@ from random import randint
 GAME_CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def qwest_result():
-    prime = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
-             61, 67, 71, 73, 79, 83, 89, 97]
+def qest_result():
     number = randint(2, 100)
     print("Question:", number)
-    user_answer = input("Your answer: ")
-    if number in prime:
-        answer = "yes"
+    count = 0
+    for i in range(1, number + 1):
+        if number % i == 0:
+            count += 1
+    if number == 1:
+        return 'no'
+    elif count == 2:
+        return 'yes'
     else:
-        answer = "no"
-    return user_answer, answer
+        return 'no'
+
