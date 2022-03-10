@@ -16,4 +16,3 @@ def qest_result():
         return 'yes'
     else:
         return 'no'
-
