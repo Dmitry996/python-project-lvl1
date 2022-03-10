@@ -7,7 +7,7 @@ def engine(game):
     print('Hello, ' + user_name)
     print(game.GAME_CONDITION)
     for _ in range(3):
-        right_answer, quest = game.quest_result()
+        right_answer, quest = game.get_round()
         print(f'Question: {quest}')
         user_answer = input("Your answer: ")
         if user_answer.lower() == right_answer:
