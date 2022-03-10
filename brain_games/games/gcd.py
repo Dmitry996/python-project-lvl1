@@ -4,8 +4,8 @@ from math import gcd
 GAME_CONDITION = 'Find the greatest common divisor of given numbers.'
 
 
-def qest_result():
+def quest_result():
     a, b = randint(1, 50), randint(1, 50)
-    print(f'Question: {a} {b}')
+    quest = f'{a} {b}'
     answer = str(gcd(a, b))
-    return answer
+    return answer, quest

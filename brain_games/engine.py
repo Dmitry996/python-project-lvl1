@@ -5,7 +5,8 @@ def engine(game):
     user_name = welcome()
     print(game.GAME_CONDITION)
     for _ in range(3):
-        right_answer = game.qest_result()
+        right_answer, quest = game.quest_result()
+        print(f'Question: {quest}')
         user_answer = input("Your answer: ")
         if user_answer.lower() == right_answer:
             print('Correct!')
