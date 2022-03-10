@@ -9,9 +9,7 @@ def quest_result():
     for i in range(1, number + 1):
         if number % i == 0:
             count += 1
-    if number == 1:
-        return 'no', number
-    elif count == 2:
+    if count == 2:
         return 'yes', number
     else:
         return 'no', number
