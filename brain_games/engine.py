@@ -1,8 +1,11 @@
 from brain_games.welcomes_user import welcome
+import prompt
 
 
 def engine(game):
-    user_name = welcome()
+    print('Welcome to the Brain Games!')
+    user_name = prompt.string('May I have your name? ')
+    print('Hello, ' + user_name)
     print(game.GAME_CONDITION)
     for _ in range(3):
         right_answer, quest = game.quest_result()
