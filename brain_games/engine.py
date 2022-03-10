@@ -1,4 +1,3 @@
-from brain_games.welcomes_user import welcome
 import prompt
 
 
