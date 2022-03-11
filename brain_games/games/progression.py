@@ -1,14 +1,16 @@
 from random import randint
 
 GAME_CONDITION = 'What number is missing in the progression?'
-STEP = randint(3, 10)
-START = randint(1, 50)
-INDEX = randint(0, 9)
+MAX_RANDOM_VALUE_STARTS = 50
+MAX_RANDOM_VALUE_STEPS = 10
 
 
 def get_round():
-    numbers = [str(i) for i in range(START, START + (STEP * 10), STEP)]
-    answer = numbers[INDEX]
-    numbers[INDEX] = '..'
+    step = randint(3, MAX_RANDOM_VALUE_STEPS)
+    start = randint(1, MAX_RANDOM_VALUE_STARTS)
+    numbers = [str(i) for i in range(start, start + (step * 10), step)]
+    index = randint(0, len(numbers) - 1)
+    answer = numbers[index]
+    numbers[index] = '..'
     quest = ' '.join(numbers)
     return answer, quest

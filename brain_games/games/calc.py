@@ -1,17 +1,18 @@
 from random import randint, choice
 
 GAME_CONDITION = 'What is the result of the expression?'
-mat_signs = ['+', '*', '-']
-NUM_A, NUM_B = randint(1, 20), randint(1, 20)
-MAT_SIGN = choice(mat_signs)
+MAX_RANDOM_VALUE = 20
 
 
 def get_round():
-    quest = f'{NUM_A} {MAT_SIGN} {NUM_B}'
-    if MAT_SIGN == '+':
-        answer = str(NUM_A + NUM_B)
-    elif MAT_SIGN == '-':
-        answer = str(NUM_A - NUM_B)
-    elif MAT_SIGN == '*':
-        answer = str(NUM_A * NUM_B)
+    mat_signs = ['+', '*', '-']
+    a, b = randint(1, MAX_RANDOM_VALUE), randint(1, MAX_RANDOM_VALUE)
+    mat_sign = choice(mat_signs)
+    quest = f'{a} {mat_sign} {b}'
+    if mat_sign == '+':
+        answer = str(a + b)
+    elif mat_sign == '-':
+        answer = str(a - b)
+    elif mat_sign == '*':
+        answer = str(a * b)
     return answer, quest
