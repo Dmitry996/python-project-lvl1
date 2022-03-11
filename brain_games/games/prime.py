@@ -1,6 +1,7 @@
 from random import randint
 
 GAME_CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RANDOM_NUMBER = randint(2, 100)
 
 
 def is_prime(num):
@@ -14,8 +15,7 @@ def is_prime(num):
 
 
 def get_round():
-    number = randint(2, 100)
-    if is_prime(number):
-        return 'yes', number
+    if is_prime(RANDOM_NUMBER):
+        return 'yes', RANDOM_NUMBER
     else:
-        return 'no', number
+        return 'no', RANDOM_NUMBER
