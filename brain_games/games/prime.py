@@ -1,7 +1,7 @@
 from random import randint
 
 GAME_CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-MAX_RANDOM_VALUE = 99
+MAX_RANDOM_VALUE = 100
 
 
 def is_prime(num):
