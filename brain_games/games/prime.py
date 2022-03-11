@@ -9,9 +9,9 @@ def is_prime(num):
     for i in range(1, num // 2 + 1):
         if num % i == 0:
             count += 1
-    if count == 1:
-        return True
-    return False
+    if count > 1:
+        return False
+    return True
 
 
 def get_round():
