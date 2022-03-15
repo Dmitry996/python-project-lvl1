@@ -12,7 +12,7 @@ def is_prime(num):
 
 
 def get_round():
-    number = randint(1, MAX_RANDOM_VALUE)
+    number = randint(2, MAX_RANDOM_VALUE)
     right_answer = ['yes', 'no']
     if is_prime(number):
         return right_answer[0], number
