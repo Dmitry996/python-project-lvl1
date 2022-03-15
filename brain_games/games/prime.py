@@ -5,18 +5,16 @@ MAX_RANDOM_VALUE = 99
 
 
 def is_prime(num):
-    count = 0
-    for i in range(1, num // 2 + 1):
+    for i in range(2, num // 2 + 1):
         if num % i == 0:
-            count += 1
-    if count > 1:
-        return False
+            return False
     return True
 
 
 def get_round():
     number = randint(1, MAX_RANDOM_VALUE)
+    right_answer = ['yes', 'no']
     if is_prime(number):
-        return 'yes', number
+        return right_answer[0], number
     else:
-        return 'no', number
+        return right_answer[1], number

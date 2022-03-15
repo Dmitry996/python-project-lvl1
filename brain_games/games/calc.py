@@ -5,6 +5,7 @@ MAX_RANDOM_VALUE = 20
 
 
 def get_round():
+    answer = 0
     mat_signs = ['+', '*', '-']
     a, b = randint(1, MAX_RANDOM_VALUE), randint(1, MAX_RANDOM_VALUE)
     mat_sign = choice(mat_signs)

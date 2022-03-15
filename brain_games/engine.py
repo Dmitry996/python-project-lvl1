@@ -1,12 +1,14 @@
 import prompt
 
+NUMBER_OF_ROUND = 3
+
 
 def engine(game):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print('Hello, ' + user_name)
     print(game.GAME_CONDITION)
-    for _ in range(3):
+    for _ in range(NUMBER_OF_ROUND):
         right_answer, quest = game.get_round()
         print(f'Question: {quest}')
         user_answer = input("Your answer: ")
